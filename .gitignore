@@ -1,0 +1,11 @@
+# Fichiers de modèles lourds (à exclure pour GitHub standard)
+*.keras
+*.h5
+
+# Fichiers Python
+__pycache__/
+*.pyc
+
+# Environnement virtuel (si tu en crées un)
+.venv/
+venv/

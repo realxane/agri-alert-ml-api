@@ -1,0 +1,150 @@
+{
+  "Apple___Black_rot": {
+    "plant": "Pommier",
+    "advice": "Éliminer les fruits infectés et les branches mortes. Appliquer un fongicide à base de soufre ou de cuivre."
+  },
+  "Apple___Cedar_apple_rust": {
+    "plant": "Pommier",
+    "advice": "Retirer les galles sur les genévriers environnants. Appliquer un fongicide préventif au printemps."
+  },
+  "Apple___healthy": {
+    "plant": "Pommier",
+    "advice": "La plante est saine. Maintenez une bonne taille pour assurer une circulation d'air optimale."
+  },
+  "Cherry_(including_sour)___Powdery_mildew": {
+    "plant": "Cerisier",
+    "advice": "Tailler pour aérer la couronne. Traiter avec du soufre dès l'apparition du feutrage blanc."
+  },
+  "Cherry_(including_sour)___healthy": {
+    "plant": "Cerisier",
+    "advice": "La plante est saine. Surveillez les attaques de pucerons noirs au printemps."
+  },
+  "Citrus Black spot": {
+    "plant": "Citronnier/Agrume",
+    "advice": "Retirer les feuilles tombées au sol qui propagent les spores. Appliquer un fongicide fongistatique."
+  },
+  "Citrus Healthy": {
+    "plant": "Citronnier/Agrume",
+    "advice": "La plante est saine. Apportez un engrais spécial agrumes riche en magnésium."
+  },
+  "Citrus canker": {
+    "plant": "Citronnier/Agrume",
+    "advice": "Maladie bactérienne grave. Tailler les zones infectées et désinfecter les outils rigoureusement."
+  },
+  "Citrus greening": {
+    "plant": "Citronnier/Agrume",
+    "advice": "Contrôler les populations de psylles (insectes vecteurs). Il n'existe pas de remède curatif simple, privilégier la nutrition."
+  },
+  "Grape___Black_rot": {
+    "plant": "Vigne",
+    "advice": "Ramasser toutes les momies (fruits desséchés). Appliquer un fongicide dès la floraison."
+  },
+  "Grape___Esca_(Black_Measles)": {
+    "plant": "Vigne",
+    "advice": "Tailler les bois infectés pendant l'hiver. Protéger les plaies de taille avec un badigeon."
+  },
+  "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": {
+    "plant": "Vigne",
+    "advice": "Améliorer l'aération de la vigne par effeuillage. Utiliser un traitement antifongique classique."
+  },
+  "Grape___healthy": {
+    "plant": "Vigne",
+    "advice": "La plante est saine. Surveillez l'apparition de pucerons."
+  },
+  "Maize_Bacterial Leaf Streak": {
+    "plant": "Maïs",
+    "advice": "Utiliser des semences saines. Éviter l'irrigation par aspersion pour limiter la propagation bactérienne."
+  },
+  "Maize_Chlorotic Mottle Virus": {
+    "plant": "Maïs",
+    "advice": "Contrôler les insectes vecteurs (thrips, chrysomèles). Détruire les résidus de culture infectés."
+  },
+  "Maize_Common_rust": {
+    "plant": "Maïs",
+    "advice": "Généralement peu grave. Si l'infection est forte, utiliser des variétés résistantes la saison prochaine."
+  },
+  "Maize_Healthy": {
+    "plant": "Maïs",
+    "advice": "La plante est saine. Surveillez l'humidité du sol."
+  },
+  "Mango_Anthracnose": {
+    "plant": "Manguier",
+    "advice": "Appliquer un spray de cuivre avant la floraison et après la nouaison des fruits."
+  },
+  "Mango_Healthy": {
+    "plant": "Manguier",
+    "advice": "La plante est saine. Nettoyez régulièrement le pied de l'arbre."
+  },
+  "Mango_Powdery Mildew": {
+    "plant": "Manguier",
+    "advice": "Traiter avec du soufre mouillable dès l'apparition du feutrage blanc sur les fleurs."
+  },
+  "Mango_Sooty Mould": {
+    "plant": "Manguier",
+    "advice": "Traiter d'abord les insectes (pucerons, cochenilles) qui produisent le miellat dont se nourrit la moisissure."
+  },
+  "Papaye_Anthracnose": {
+    "plant": "Papayer",
+    "advice": "Éviter de blesser les fruits. Appliquer un fongicide après la récolte pour la conservation."
+  },
+  "Papaye_Curl": {
+    "plant": "Papayer",
+    "advice": "Maladie virale transmise par les mouches blanches. Installer des pièges jaunes collants."
+  },
+  "Papaye_Healthy": {
+    "plant": "Papayer",
+    "advice": "La plante est saine. Veillez à un drainage parfait du sol."
+  },
+  "Papaye_Mosaic": {
+    "plant": "Papayer",
+    "advice": "Éliminer immédiatement les plants infectés pour éviter la propagation aux voisins."
+  },
+  "Pepper,_bell___Bacterial_spot": {
+    "plant": "Poivron",
+    "advice": "Éviter l'arrosage par le haut. Utiliser un spray bactéricide à base de cuivre dès les premiers signes."
+  },
+  "Pepper,_bell___healthy": {
+    "plant": "Poivron",
+    "advice": "La plante est saine. Continuez une fertilisation équilibrée."
+  },
+  "Pepper_Footrot": {
+    "plant": "Poivre/Piment",
+    "advice": "Améliorer le drainage du sol. Appliquer un fongicide systémique au pied de la plante."
+  },
+  "Pepper_Pollu_Disease": {
+    "plant": "Poivre/Piment",
+    "advice": "Maladie fongique (Anthracnose). Récolter à temps et sécher rapidement les grains. Traiter au cuivre."
+  },
+  "Pepper_Slow-Decline": {
+    "plant": "Poivre/Piment",
+    "advice": "Causé par des nématodes. Utiliser des nématicides biologiques (neem) et enrichir le sol en matière organique."
+  },
+  "Potato___healthy": {
+    "plant": "Pomme de terre",
+    "advice": "La plante est saine. Butter les pieds pour protéger les tubercules."
+  },
+  "Potato_blight": {
+    "plant": "Pomme de terre",
+    "advice": "Risque de Mildiou (Late Blight) ou Alternariose (Early Blight). Appliquer un fongicide cuprique et supprimer les fanes atteintes."
+  },
+  "Strawberry___Leaf_scorch": {
+    "plant": "Fraisier",
+    "advice": "Retirer les feuilles sèches. Éviter les excès d'engrais qui brûlent le feuillage."
+  },
+  "Strawberry___healthy": {
+    "plant": "Fraisier",
+    "advice": "La plante est saine. Pailler le sol pour éviter que les fruits ne touchent la terre."
+  },
+  "Tomato_Healthy": {
+    "plant": "Tomate",
+    "advice": "La plante est saine. Continuer un arrosage régulier sans mouiller les feuilles."
+  },
+  "Tomato_Pottassium Deficiency": {
+    "plant": "Tomate",
+    "advice": "Les feuilles jaunissent sur les bords. Apporter un engrais riche en potasse (K) comme la cendre de bois ou le purin de consoude."
+  },
+  "Tomato_blight": {
+    "plant": "Tomate",
+    "advice": "Mildiou probable. Traiter préventivement à la bouillie bordelaise et éviter l'humidité excessive sur le feuillage."
+  }
+}
