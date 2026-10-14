@@ -4,8 +4,8 @@ import numpy as np
 import tensorflow as tf
 
 # ================= CONFIGURATION =================
-TRAIN_DIR = r"C:\Users\souma\OneDrive\Documents\Alassane\IA2_EfficientNetB4\dataset_split\train"
-VAL_DIR   = r"C:\Users\souma\OneDrive\Documents\Alassane\IA2_EfficientNetB4\dataset_split\val"
+TRAIN_DIR = r"dataset_split/train"
+VAL_DIR   = r"dataset_split/val"
 
 IMG_SIZE = (380, 380) # EfficientNetB4
 BATCH = 128          
@@ -69,7 +69,7 @@ for i, cname in enumerate(class_names):
     folder = os.path.join(TRAIN_DIR, cname)
     if not os.path.isdir(folder):
         continue
-    counts[i] = sum(1 for f in os.lisstdir(folder) if f.lower().endswith(IMG_EXT))
+    counts[i] = sum(1 for f in os.listdir(folder) if f.lower().endswith(IMG_EXT))
 
 total = counts.sum()
 class_weight = {
@@ -183,5 +183,5 @@ model.fit(
     verbose=1
 )
 
-model.savfe("plant_disease_classifier.keras")
+model.save("plant_disease_classifier.keras")
 print("Modèle sauvegardé. Historique sauvegardé dans 'training_log.csv'")

@@ -12,10 +12,12 @@ Ce dépôt contient la partie Machine Learning : l'entraînement du modèle et l
 
 ## Modèle
 
-- **Architecture** : EfficientNetB4 pré-entraîné sur ImageNet, avec apprentissage par transfert (fine-tuning).
-- **Données** : [nom du jeu de données, source], [N] images réparties en 37 classes (maladies et plantes saines).
-- **Découpage** : [X] % entraînement, [Y] % validation, [Z] % test.
-- **Augmentation de données** : [rotations, retournements, zoom…].
+- **Architecture** : EfficientNetB4 pré-entraîné sur ImageNet (images 380 × 380), apprentissage par transfert en deux phases :
+  1. entraînement de la tête de classification, base gelée (7 époques, taux d'apprentissage 1e-3) ;
+  2. fine-tuning des 30 dernières couches, BatchNormalization gelées (3 époques, taux d'apprentissage 1e-5).
+- **Déséquilibre des classes** : pondération des classes (class weights) calculée à partir du nombre d'images par classe.
+- **Augmentation de données** : retournement horizontal, rotation (±8 %) et zoom (±10 %).
+- **Données** : [nom du jeu de données, source], [N] images réparties en 37 classes, découpées en 70 % entraînement, 15 % validation, 15 % test.
 
 ## Résultats
 
@@ -23,21 +25,26 @@ Ce dépôt contient la partie Machine Learning : l'entraînement du modèle et l
 
 | Métrique | Valeur |
 | --- | --- |
-| Exactitude (accuracy) | [..] % |
-| F1-score (moyenne macro) | [..] % |
+| Exactitude (accuracy) | 99.05 % |
+| F1-score (moyenne macro) | 97.56 % |
 
 ![Courbes d'entraînement](training_curves.png)
 ![Matrice de confusion](confusion_matrix_counts.png)
 
-## Architecture de l'API
+## Organisation du code
 
-1. **Entraînement** (`[train.ipynb]`) : préparation des données, fine-tuning d'EfficientNetB4, évaluation.
-2. **API de prédiction** (`app.py`) : API REST Flask qui reçoit une image et renvoie la maladie détectée avec son score de confiance.
-3. **Recommandations** (`recommendations.json`) : association de chaque maladie à un traitement conseillé.
+| Fichier | Rôle |
+| --- | --- |
+| `train.py` | Entraînement complet (phase 1 + fine-tuning) |
+| `finetuning_only.py` | Reprise du fine-tuning à partir d'un modèle sauvegardé |
+| `evaluate.py` | Évaluation sur le jeu de test : exactitude, rapport par classe, F1 |
+| `matrice.py` / `courbe.py` | Matrice de confusion et courbes d'entraînement |
+| `predict.py` | Prédiction sur une image isolée |
+| `app.py` | API REST Flask (`POST /predict`) : maladie détectée, confiance et traitement recommandé |
 
 ## Lancement local
 
-Le modèle entraîné (`plant_disease_final_model.keras`) est disponible sous le nom de ('best.keras') [https://drive.google.com/drive/folders/1_p-oxv8p93n1NRHo3g71iSH0cDeZ2AqE?usp=drive_link](lien-drive). Placez-le à la racine du projet, puis :
+Le modèle entraîné (`plant_disease_final_model.keras`) est disponible ici [https://drive.google.com/drive/folders/1_p-oxv8p93n1NRHo3g71iSH0cDeZ2AqE?usp=drive_link](lien-drive). Placez-le à la racine du projet, puis :
 
 ```bash
 pip install -r requirements.txt
